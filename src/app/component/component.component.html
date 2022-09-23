@@ -1,0 +1,15 @@
+<div fxFlex fxLayout="column" class="container">
+    <div fxLayout="row wrap" class="grid">
+        <div class="card" fxFlex="30" fxFlex.md="50" fxFlex.sm="100" fxFlex.xs="" fxLayout="column" *ngFor="let detalleImagenes of listaImagenes"  >
+            <app-hijo [dataEntrante]="detalleImagenes" ></app-hijo>
+            
+        </div>
+        <div class="muestra-datos">
+            <li *ngFor="let datos of listImage">
+                <div class="title">
+                    {{datos?.data?.nameImage}}
+                </div>
+            </li>
+        </div>
+    </div>
+</div>

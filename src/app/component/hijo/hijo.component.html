@@ -1,0 +1,9 @@
+<mat-card>
+    <mat-card-title>
+        {{dataEntrante?.nameImage | titlecase | slice:0:12 | titlecase }}
+    </mat-card-title>
+    <img mat-card-image [src]="dataEntrante?.urlImage"  alt="" class="image">
+    <mat-card-footer>
+        <button fxFlex mat-flat-button color="primary" (click)="disparador()">Enviar mensaje</button>
+    </mat-card-footer>
+</mat-card>
